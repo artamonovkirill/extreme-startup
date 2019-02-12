@@ -1,8 +1,7 @@
 language: java
-jvm: openjdk11
+jvm: openjdk10
 install:
-  - export JAVA_HOME=$HOME/openjdk11
-  - $TRAVIS_BUILD_DIR/install-jdk.sh --install openjdk11 --target $JAVA_HOME
+  - jdk_switcher use openjdk10
 jobs:
   include:
     - stage: java/spring-boot
