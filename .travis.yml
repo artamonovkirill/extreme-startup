@@ -1,7 +1,8 @@
 language: java
 jvm: openjdk11
 install:
-  - jdk_switcher use openjdk11
+  - export JAVA_HOME=$HOME/openjdk11
+  - $TRAVIS_BUILD_DIR/install-jdk.sh --install openjdk11 --target $JAVA_HOME
 jobs:
   include:
     - stage: java/spring-boot
@@ -10,4 +11,4 @@ jobs:
       - ./gradlew clean build
 cache:
   directories:
-    - "$HOME/.gradle"
+    - $HOME/.gradle
