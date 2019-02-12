@@ -1,9 +1,5 @@
 language: java
-jdk:
-- openjdk11
-python:
-  - 2.7
-  - 3.7
+jdk: openjdk11
 jobs:
   include:
   - stage: java/springboot
@@ -23,6 +19,7 @@ jobs:
       - cd $TRAVIS_BUILD_DIR/groovy/ratpack
       - ./gradlew build --no-daemon
   - stage: python/flask
+    python: '3.7'
     install:
       - pip install -r $TRAVIS_BUILD_DIR/python/flask/requirements.txt
     script:
