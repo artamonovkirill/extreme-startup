@@ -14,11 +14,7 @@ class QueryControllerSpec extends Specification {
 
     @LocalServerPort
     def port
-    HttpClient http
-
-    def setup() {
-        http = new HttpClient()
-    }
+    def http = new HttpClient()
 
     def 'exposes query endpoint'() {
         when:

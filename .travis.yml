@@ -6,17 +6,21 @@ python:
   - 3.7
 jobs:
   include:
-  - stage: java/spring-boot
+  - stage: java/springboot
     script:
-      - cd $TRAVIS_BUILD_DIR/java/spring-boot
+      - cd $TRAVIS_BUILD_DIR/java/springboot
       - ./gradlew build
   - stage: java/spark
     script:
       - cd $TRAVIS_BUILD_DIR/java/spark
       - ./gradlew build
-  - stage: groovy/spring-boot
+  - stage: groovy/springboot
     script:
-      - cd $TRAVIS_BUILD_DIR/groovy/spring-boot
+      - cd $TRAVIS_BUILD_DIR/groovy/springboot
+      - ./gradlew build
+  - stage: groovy/ratpack
+    script:
+      - cd $TRAVIS_BUILD_DIR/groovy/ratpack
       - ./gradlew build
   - stage: python/flask
     install:

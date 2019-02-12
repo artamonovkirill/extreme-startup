@@ -1,0 +1,22 @@
+plugins {
+    id 'groovy'
+    id 'io.ratpack.ratpack-groovy' version '1.6.0'
+}
+
+apply plugin: 'groovy'
+apply plugin: 'io.ratpack.ratpack-groovy'
+
+dependencies {
+    implementation 'org.codehaus.groovy:groovy:2.5.6'
+
+    testImplementation 'org.spockframework:spock-core:1.2-groovy-2.5'
+    testImplementation 'com.tomtom.http:goji-http-client:1.2.3'
+}
+
+repositories {
+    jcenter()
+}
+
+wrapper {
+    gradleVersion = '5.2.1'
+}
