@@ -5,9 +5,12 @@ jobs:
   include:
     - stage: java/spring-boot
       script:
-        - java --version
-        - cd java/spring-boot
-        - ./gradlew clean build
+        - cd $TRAVIS_BUILD_DIR/java/spring-boot
+        - ./gradlew build
+    - stage: groovy/spring-boot
+      script:
+        - cd $TRAVIS_BUILD_DIR/groovy/spring-boot
+        - ./gradlew build
 cache:
   directories:
     - $HOME/.gradle
