@@ -18,9 +18,19 @@ jobs:
       - cd $TRAVIS_BUILD_DIR/groovy/springboot
       - ./gradlew build --no-daemon
   - stage: groovy/ratpack
-    language: java
+    language: groovy
     script:
       - cd $TRAVIS_BUILD_DIR/groovy/ratpack
+      - ./gradlew build --no-daemon
+  - stage: groovy/ratpack
+    language: groovy
+    script:
+      - cd $TRAVIS_BUILD_DIR/groovy/ratpack
+      - ./gradlew build --no-daemon
+  - stage: scala/scalatra
+    language: scala
+    script:
+      - cd $TRAVIS_BUILD_DIR/scala/scalatra
       - ./gradlew build --no-daemon
   - stage: python/flask
     language: python
@@ -47,3 +57,4 @@ notifications:
       secure: Tleano7ihbgQ79dlJJSfkwpf7KJxUU0c51yS0KeDrrnpRE67HiMhM8Un8HDlMyz5gNrXqfyxyhimvJ2SgA9IGzVB/Fhs/yzqw6ctJzfozqhBiy16+2PI/d22MPL++uWkxLwAaEUkcyjjPlfrbrnGBLVrjH3MuHzfeB8a1WqWgq7oFUPRRZqBvbqi6LN9ry0pM3DzeSGbvMu7VAIb+n+ItuA14RvECNSHMzqAz7JPib2SP4uJ4otqa1n4xvMuTUUBLgNDoRRWE/KQdwlNQcP6xyrxyYp3z5IvQlrNvC9q9+sa2I5sTsH1uZc/FXfynAnRUVXJoIFDH+aF4v1njIEmtAY6D3ooembJcWsku5noFLuEhMeWY2Ar8U4nrgvCcp65ZI/IhhOrScg5PD9ErPzLWeUAfD5hI9wvxSnCcX2nn7N6UAQc/h2MWm+sLyVRT5Ck5rTof0sl2r2sv9lNRURi4zSNJcERzOe6BFDpIzfF13AXcMGb87H+EFnwBE/2UE9makEabGJCAjQ9byDy7owiK1EGOV9ZKYNoRZcFscC0pvZLSRvdpCyzvKFX69d2eT25Rk8Qaejyb40NJ998usWpwHKU3TqJYUm+JSD2BPpsLjI9nOstNkNutHvyKzgO7lvgykcaOjYVFGjV16xCJPqMtfV4nBjlH5ZAnRr0ubkeNTI=
     on_success: change
     on_failure: change
+  email: false
