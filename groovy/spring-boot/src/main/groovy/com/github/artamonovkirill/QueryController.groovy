@@ -10,7 +10,7 @@ class QueryController {
     @GetMapping
     def query(@RequestParam('q') query) {
         println "Query is: $query"
-        'Hello'
+        query
     }
 
 }
