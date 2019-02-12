@@ -1,0 +1,8 @@
+language: java
+jvm: openjdk11
+script:
+  - cd java/spring-boot
+  - ./gradlew clean build
+cache:
+  directories:
+    - "$HOME/.gradle"
