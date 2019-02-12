@@ -13,14 +13,9 @@ jobs:
       - cd $TRAVIS_BUILD_DIR/java/spark
       - ./gradlew build --no-daemon
   - stage: groovy/springboot
-    language: java
-    script:
-      - cd $TRAVIS_BUILD_DIR/groovy/springboot
-      - ./gradlew build --no-daemon
-  - stage: groovy/ratpack
     language: groovy
     script:
-      - cd $TRAVIS_BUILD_DIR/groovy/ratpack
+      - cd $TRAVIS_BUILD_DIR/groovy/springboot
       - ./gradlew build --no-daemon
   - stage: groovy/ratpack
     language: groovy
