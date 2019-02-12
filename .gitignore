@@ -10,7 +10,8 @@
 
 # Gradle
 .gradle
-build/
+build
 
 # Python
 __pycache__
+.pytest_cache
