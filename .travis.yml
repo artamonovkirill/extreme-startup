@@ -1,10 +1,13 @@
 language: java
+jdk:
+  - oraclejdk10
 jobs:
   include:
     - stage: java/spring-boot
       script:
-      - cd java/spring-boot
-      - ./gradlew clean build
+        - java --version
+        - cd java/spring-boot
+        - ./gradlew clean build
 cache:
   directories:
     - $HOME/.gradle
