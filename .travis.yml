@@ -1,30 +1,46 @@
-language: java
-jdk: openjdk11
 jobs:
   include:
   - stage: java/springboot
+    language: java
+    jdk: openjdk11
     script:
       - cd $TRAVIS_BUILD_DIR/java/springboot
       - ./gradlew build --no-daemon
   - stage: java/spark
+    language: java
+    jdk: openjdk11
     script:
       - cd $TRAVIS_BUILD_DIR/java/spark
       - ./gradlew build --no-daemon
   - stage: groovy/springboot
+    language: java
+    jdk: openjdk11
     script:
       - cd $TRAVIS_BUILD_DIR/groovy/springboot
       - ./gradlew build --no-daemon
   - stage: groovy/ratpack
+    language: java
+    jdk: openjdk11
     script:
       - cd $TRAVIS_BUILD_DIR/groovy/ratpack
       - ./gradlew build --no-daemon
   - stage: python/flask
+    language: python
     python: '3.7'
     install:
-      - pip install -r $TRAVIS_BUILD_DIR/python/flask/requirements.txt
+      - cd $TRAVIS_BUILD_DIR/python/flask
+      - pip install --user -r requirements.txt
     script:
       - cd $TRAVIS_BUILD_DIR/python/flask
       - pytest
+  - stage: nodejs/express
+    language: node_js
+    install:
+      - cd $TRAVIS_BUILD_DIR/nodejs/express
+      - npm ci
+    script:
+      - cd $TRAVIS_BUILD_DIR/nodejs/express
+      - npm test
 cache:
   directories:
   - "$HOME/.gradle"

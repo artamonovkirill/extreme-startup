@@ -12,6 +12,9 @@
 .gradle
 build
 
+# Node
+node_modules
+
 # Python
 __pycache__
 .pytest_cache
