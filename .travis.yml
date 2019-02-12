@@ -26,7 +26,6 @@ jobs:
       - ./gradlew build --no-daemon
   - stage: python/flask
     language: python
-    python: '3.7'
     install:
       - cd $TRAVIS_BUILD_DIR/python/flask
       - pip install --user -r requirements.txt

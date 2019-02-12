@@ -1,4 +1,4 @@
-import * as express from '';
+import * as express from 'express';
 
 export const app = express();
 
