@@ -4,6 +4,7 @@ jobs:
   include:
     - stage: java/spring-boot
       script:
+      - jdk_switcher use oraclejdk11
       - cd java/spring-boot
       - ./gradlew clean build
 cache:

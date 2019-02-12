@@ -9,8 +9,8 @@ apply plugin: 'java'
 dependencies {
     implementation 'org.springframework.boot:spring-boot-dependencies:2.1.2.RELEASE'
     implementation 'org.springframework.boot:spring-boot-starter-web'
-    implementation 'org.springframework.boot:spring-boot-starter-test'
 
+    testImplementation 'org.springframework.boot:spring-boot-starter-test'
     testImplementation 'org.assertj:assertj-core:3.11.1'
 }
 
