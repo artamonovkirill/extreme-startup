@@ -14,13 +14,11 @@ jobs:
       - ./gradlew build --no-daemon
   - stage: groovy/springboot
     language: java
-    jdk: openjdk11
     script:
       - cd $TRAVIS_BUILD_DIR/groovy/springboot
       - ./gradlew build --no-daemon
   - stage: groovy/ratpack
     language: java
-    jdk: openjdk11
     script:
       - cd $TRAVIS_BUILD_DIR/groovy/ratpack
       - ./gradlew build --no-daemon
@@ -28,7 +26,7 @@ jobs:
     language: python
     install:
       - cd $TRAVIS_BUILD_DIR/python/flask
-      - pip install --user -r requirements.txt
+      - pip install -r requirements.txt
     script:
       - cd $TRAVIS_BUILD_DIR/python/flask
       - pytest
