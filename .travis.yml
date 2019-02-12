@@ -1,20 +1,29 @@
 language: java
 jdk:
 - openjdk11
+python:
+  - 2.7
+  - 3.7
 jobs:
   include:
   - stage: java/spring-boot
     script:
-    - cd $TRAVIS_BUILD_DIR/java/spring-boot
-    - "./gradlew build"
+      - cd $TRAVIS_BUILD_DIR/java/spring-boot
+      - ./gradlew build
   - stage: java/spark
     script:
-    - cd $TRAVIS_BUILD_DIR/java/spark
-    - "./gradlew build"
+      - cd $TRAVIS_BUILD_DIR/java/spark
+      - ./gradlew build
   - stage: groovy/spring-boot
     script:
-    - cd $TRAVIS_BUILD_DIR/groovy/spring-boot
-    - "./gradlew build"
+      - cd $TRAVIS_BUILD_DIR/groovy/spring-boot
+      - ./gradlew build
+  - stage: python/flask
+    install:
+      - pip install -r requirements.txt
+    script:
+      - cd $TRAVIS_BUILD_DIR/python/flask
+      - pytest
 cache:
   directories:
   - "$HOME/.gradle"
