@@ -1,7 +1,5 @@
 language: java
-jvm: openjdk10
-install:
-  - jdk_switcher use openjdk10
+jvm: oraclejdk11
 jobs:
   include:
     - stage: java/spring-boot
