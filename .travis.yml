@@ -9,19 +9,19 @@ jobs:
   - stage: java/springboot
     script:
       - cd $TRAVIS_BUILD_DIR/java/springboot
-      - ./gradlew build
+      - ./gradlew build --no-daemon
   - stage: java/spark
     script:
       - cd $TRAVIS_BUILD_DIR/java/spark
-      - ./gradlew build
+      - ./gradlew build --no-daemon
   - stage: groovy/springboot
     script:
       - cd $TRAVIS_BUILD_DIR/groovy/springboot
-      - ./gradlew build
+      - ./gradlew build --no-daemon
   - stage: groovy/ratpack
     script:
       - cd $TRAVIS_BUILD_DIR/groovy/ratpack
-      - ./gradlew build
+      - ./gradlew build --no-daemon
   - stage: python/flask
     install:
       - pip install -r requirements.txt
