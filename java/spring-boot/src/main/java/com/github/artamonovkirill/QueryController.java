@@ -10,7 +10,7 @@ public class QueryController {
     @GetMapping
     public String query(@RequestParam("q") String query) {
         System.out.println("Query is: " + query);
-        return "Hello";
+        return query;
     }
 
 }

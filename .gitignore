@@ -2,6 +2,15 @@
 .idea
 *.iml
 
+# Visual Studio Code
+.vscode
+.project
+.settings
+.classpath
+
 # Gradle
 .gradle
 build/
+
+# Python
+__pycache__
