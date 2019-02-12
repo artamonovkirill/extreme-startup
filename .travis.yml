@@ -24,6 +24,8 @@ jobs:
       - ./gradlew build --no-daemon
   - stage: scala/scalatra
     language: scala
+    scala:
+      - 2.12.2
     script:
       - cd $TRAVIS_BUILD_DIR/scala/scalatra
       - ./gradlew build --no-daemon
