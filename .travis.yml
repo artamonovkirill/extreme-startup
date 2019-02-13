@@ -1,33 +1,9 @@
 jobs:
   include:
-  - stage: java/springboot
+  - stage: jdk
     language: java
     jdk: openjdk11
     script:
-      - cd $TRAVIS_BUILD_DIR/java/springboot
-      - ./gradlew build --no-daemon
-  - stage: java/spark
-    language: java
-    jdk: openjdk11
-    script:
-      - cd $TRAVIS_BUILD_DIR/java/spark
-      - ./gradlew build --no-daemon
-  - stage: groovy/springboot
-    language: groovy
-    script:
-      - cd $TRAVIS_BUILD_DIR/groovy/springboot
-      - ./gradlew build --no-daemon
-  - stage: groovy/ratpack
-    language: groovy
-    script:
-      - cd $TRAVIS_BUILD_DIR/groovy/ratpack
-      - ./gradlew build --no-daemon
-  - stage: scala/scalatra
-    language: scala
-    scala:
-      - 2.12.2
-    script:
-      - cd $TRAVIS_BUILD_DIR/scala/scalatra
       - ./gradlew build --no-daemon
 #  - stage: python/flask
 #    language: python

@@ -7,7 +7,7 @@ import spock.lang.Specification
 
 import static com.tomtom.http.response.ResponseCode.OK
 
-class QueryEndpoint extends Specification {
+class QueryEndpointSpec extends Specification {
 
     RatpackServer server
     def http = new HttpClient()

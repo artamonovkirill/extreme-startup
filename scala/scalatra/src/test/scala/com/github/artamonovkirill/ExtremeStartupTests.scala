@@ -5,7 +5,7 @@ class ExtremeStartupTests extends FunSpec with Matchers {
 
   describe("handles") {
     it("multiple queries") {
-      ExtremeStartup.question("a=b&q=foo") should equal(Some("foo"))
+      ExtremeStartup.question("a=b&q=foo") should equal(Some("foo1"))
     }
 
     it("no query value") {

@@ -1,0 +1,15 @@
+plugins {
+    id 'java'
+    id 'groovy'
+    id 'scala'
+}
+
+subprojects {
+    repositories {
+        jcenter()
+    }
+}
+
+wrapper {
+    gradleVersion = '5.2.1'
+}
