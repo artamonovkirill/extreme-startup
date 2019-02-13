@@ -1,12 +1,12 @@
 import pytest
 
-from startup import startup
+from . import app
 
 
 @pytest.fixture
 def client():
-    startup.app.config['TESTING'] = True
-    return startup.app.test_client()
+    app.config['TESTING'] = True
+    return app.test_client()
 
 
 def test_query_endpoint_handles_no_query(client):

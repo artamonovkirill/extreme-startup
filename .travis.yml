@@ -3,16 +3,11 @@ jobs:
   - stage: jdk
     language: java
     jdk: openjdk11
-    script:
-      - ./gradlew build --no-daemon
-#  - stage: python/flask
-#    language: python
-#    install:
-#      - cd $TRAVIS_BUILD_DIR/python/flask
-#      - pip install -r requirements.txt
-#    script:
-#      - cd $TRAVIS_BUILD_DIR/python/flask
-#      - pytest
+    script: ./gradlew build --no-daemon
+  - stage: python
+    language: python
+    install: pip install -r $TRAVIS_BUILD_DIR/python/flask/requirements.txt
+    script: pytest
   - stage: nodejs/express
     language: node_js
     node_js: node
