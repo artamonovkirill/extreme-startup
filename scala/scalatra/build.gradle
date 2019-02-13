@@ -1,5 +1,8 @@
 dependencies {
     implementation 'org.scalatra:scalatra_2.12:2.6.4'
+    implementation 'javax.servlet:javax.servlet-api:3.1.0'
+    implementation 'org.eclipse.jetty:jetty-server:9.4.14.v20181114'
+    implementation 'org.eclipse.jetty:jetty-servlet:9.4.14.v20181114'
 
     testImplementation 'org.scalatra:scalatra-scalatest_2.12:2.6.4'
 }

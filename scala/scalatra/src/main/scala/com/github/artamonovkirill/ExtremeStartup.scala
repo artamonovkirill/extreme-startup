@@ -1,5 +1,7 @@
 package com.github.artamonovkirill
 
+import org.scalatra.ScalatraServlet
+
 object ExtremeStartup {
   def question(query: String): Option[String] = {
     query
