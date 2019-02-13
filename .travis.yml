@@ -15,6 +15,7 @@ jobs:
 #      - pytest
   - stage: nodejs/express
     language: node_js
+    node_js: node
     install:
       - cd $TRAVIS_BUILD_DIR/nodejs/express
       - npm ci
