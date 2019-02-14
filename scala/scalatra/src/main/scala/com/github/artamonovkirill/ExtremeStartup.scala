@@ -7,7 +7,7 @@ object ExtremeStartup {
     query
       .split("&")
       .find(q => q.startsWith("q"))
-      .flatMap(q => q.split("=").tail.find(p => true))
+      .flatMap(q => q.split("=").tail.headOption)
   }
 }
 
