@@ -16,3 +16,5 @@ Initial setups for [Extreme Startup](https://github.com/rchatley/extreme_startup
   * [Happstack](./haskell/happstack/README.md)
 * TypeScript/NodeJS
   * [Express](./nodejs/express/README.md)
+* Ruby:
+  * [Sinatra](./ruby/sinatra/README.md)
