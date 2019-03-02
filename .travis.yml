@@ -17,6 +17,11 @@ jobs:
     script:
       - cd $TRAVIS_BUILD_DIR/nodejs/express
       - npm test
+  - stage: ruby/sinatra
+    language: ruby
+    script:
+      - cd $TRAVIS_BUILD_DIR/ruby/sinatra
+      - ruby extreme_startup.spec.rb
 cache:
   directories:
   - "$HOME/.gradle"
