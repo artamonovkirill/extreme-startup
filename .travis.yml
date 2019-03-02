@@ -19,7 +19,7 @@ jobs:
       - npm test
   - stage: ruby/sinatra
     language: ruby
-    install: gem install sinatra
+    install: gem install sinatra rack
     script:
       - cd $TRAVIS_BUILD_DIR/ruby/sinatra
       - ruby extreme_startup.spec.rb
