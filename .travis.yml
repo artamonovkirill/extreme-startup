@@ -21,9 +21,12 @@ jobs:
     language: ruby
     rvm:
       - 2.2
+    install:
+      - cd $TRAVIS_BUILD_DIR/ruby/sinatra
+      - bundle install
     script:
       - cd $TRAVIS_BUILD_DIR/ruby/sinatra
-      - ruby extreme_startup.spec.rb
+      - rake
 cache:
   directories:
   - "$HOME/.gradle"
