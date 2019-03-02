@@ -19,6 +19,8 @@ jobs:
       - npm test
   - stage: ruby/sinatra
     language: ruby
+    rvm:
+      - 2.2
     install: gem install sinatra rack
     script:
       - cd $TRAVIS_BUILD_DIR/ruby/sinatra
