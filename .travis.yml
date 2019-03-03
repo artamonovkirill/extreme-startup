@@ -20,7 +20,7 @@ jobs:
   - stage: Ruby/Sinatra
     language: ruby
     rvm:
-      - 2.2
+      - '2.3'
     gemfile: ruby/sinatra/Gemfile
     before_install:
       - gem update --system
