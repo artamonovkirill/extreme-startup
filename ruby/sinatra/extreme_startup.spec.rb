@@ -1,4 +1,4 @@
-require './extreme_startup'
+require_relative 'extreme_startup'
 require 'minitest/autorun'
 require 'rack/test'
 

@@ -26,8 +26,7 @@ jobs:
       - gem update --system
       - gem install bundler
     script:
-      - cd $TRAVIS_BUILD_DIR/ruby/sinatra
-      - rake
+      - rake --rakefile ruby/sinatra/Rakefile
 cache:
   directories:
   - "$HOME/.gradle"
