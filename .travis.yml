@@ -21,16 +21,11 @@ jobs:
     language: ruby
     rvm:
       - '2.3'
-    gemfile: ruby/sinatra/Gemfile
     before_install:
       - gem update --system
-      - gem install bundler
     install:
-      - bundle install --gemfile ruby/sinatra/Gemfile
+      - gem install rack sinatra minitest
     script:
-      - bundle info rack
-      - bundle info sinatra
-      - bundle info minitest
       - rake --rakefile ruby/Rakefile
 cache:
   directories:
