@@ -21,9 +21,7 @@ jobs:
     language: ruby
     rvm:
       - 2.2
-    install:
-      - cd $TRAVIS_BUILD_DIR/ruby/sinatra
-      - bundle install
+    gemfile: $TRAVIS_BUILD_DIR/ruby/sinatra/Gemfile
     script:
       - cd $TRAVIS_BUILD_DIR/ruby/sinatra
       - rake
