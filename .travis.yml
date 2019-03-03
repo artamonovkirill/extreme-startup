@@ -25,6 +25,8 @@ jobs:
     before_install:
       - gem update --system
       - gem install bundler
+    install:
+      - bundle install --gemfile ruby/sinatra/Gemfile
     script:
       - rake --rakefile ruby/Rakefile
 cache:
