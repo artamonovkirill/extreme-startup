@@ -21,8 +21,6 @@ jobs:
     language: ruby
     rvm:
       - '2.3'
-    before_install:
-      - gem update --system
     install:
       - gem install rack sinatra minitest
     script:
