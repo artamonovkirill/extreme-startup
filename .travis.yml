@@ -22,7 +22,7 @@ jobs:
     rvm:
       - '2.3'
     install:
-      - gem install rack sinatra minitest
+      - gem install rack-test sinatra minitest
     script:
       - rake --rakefile ruby/Rakefile
 cache:
