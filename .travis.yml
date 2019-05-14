@@ -21,8 +21,7 @@ jobs:
     language: ruby
     rvm:
       - '2.3'
-    install:
-      - gem install rack-test sinatra minitest
+    gemfile: ruby/sinatra/Gemfile
     script:
       - rake --rakefile ruby/Rakefile
 cache:

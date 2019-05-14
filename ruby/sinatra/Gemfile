@@ -2,5 +2,6 @@ source "https://rubygems.org" do
   gem 'sinatra'
   group :test do
     gem 'minitest'
+    gem 'rack-test'
   end
 end
