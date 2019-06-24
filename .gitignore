@@ -1,20 +1,21 @@
 # Intellij
-.idea
 *.iml
+.idea/
 
 # Visual Studio Code
 .vscode
 .project
-.settings
 .classpath
+.settings/
 
 # Gradle
 .gradle
-build
+build/
+out/
 
 # Node
-node_modules
+node_modules/
 
 # Python
 __pycache__
-.pytest_cache
+.pytest_cache/
