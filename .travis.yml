@@ -2,7 +2,7 @@ jobs:
   include:
   - stage: JDK
     language: java
-    jdk: openjdk11
+    jdk: openjdk14
     script: ./gradlew build --no-daemon
   - stage: Python
     language: python

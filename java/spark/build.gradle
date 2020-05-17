@@ -1,8 +1,4 @@
 dependencies {
-    implementation 'com.sparkjava:spark-core:2.7.2'
-}
-
-test {
-    useJUnitPlatform()
+    implementation "com.sparkjava:spark-core:$versions.spark"
 }
 

@@ -1,4 +1,10 @@
 subprojects {
     apply plugin: 'scala'
+    apply plugin: 'com.github.maiflai.scalatest'
+
+    dependencies {
+        testRuntime "org.pegdown:pegdown:$versions.pegdown"
+        testRuntime "com.vladsch.flexmark:flexmark-all:$versions.flexmark"
+    }
 }
 

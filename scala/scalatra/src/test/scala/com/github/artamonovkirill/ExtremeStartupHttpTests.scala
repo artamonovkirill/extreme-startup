@@ -1,10 +1,7 @@
 package com.github.artamonovkirill
 
-import org.junit.runner.RunWith
-import org.scalatest.junit.JUnitRunner
 import org.scalatra.test.scalatest.ScalatraFunSuite
 
-@RunWith(classOf[JUnitRunner])
 class ExtremeStartupHttpTests extends ScalatraFunSuite {
 
   addServlet(classOf[ExtremeStartup], "/*")
