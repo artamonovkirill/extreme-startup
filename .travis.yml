@@ -1,15 +1,13 @@
 jobs:
   include:
-  - stage: JDK
+  - stage: test
     language: java
     jdk: openjdk14
     script: ./gradlew build --no-daemon
-  - stage: Python
-    language: python
+  - language: python
     install: pip install -r $TRAVIS_BUILD_DIR/python/flask/requirements.txt
     script: pytest
-  - stage: NodeJS/Express
-    language: node_js
+  - language: node_js
     node_js: node
     install:
       - cd $TRAVIS_BUILD_DIR/nodejs/express
@@ -17,8 +15,7 @@ jobs:
     script:
       - cd $TRAVIS_BUILD_DIR/nodejs/express
       - npm test
-  - stage: Ruby/Sinatra
-    language: ruby
+  - language: ruby
     rvm:
       - '2.3'
     gemfile: ruby/sinatra/Gemfile
