@@ -7,7 +7,7 @@
   },
   "dependencies": {
     "express": "^4.17.1",
-    "typescript": "^3.9.3",
+    "typescript": "^3.9.5",
     "ts-node": "^8.10.2"
   },
   "devDependencies": {
