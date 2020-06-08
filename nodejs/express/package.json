@@ -6,13 +6,13 @@
     "ts-node": "ts-node"
   },
   "dependencies": {
-    "express": "^4.17.1",
-    "typescript": "^3.9.5",
-    "ts-node": "^8.10.2"
+    "express": "4.17.1",
+    "typescript": "3.9.5",
+    "ts-node": "8.10.2"
   },
   "devDependencies": {
-    "supertest": "^4.0.2",
-    "@types/mocha": "^7.0.2",
-    "mocha": "^7.2.0"
+    "supertest": "4.0.2",
+    "@types/mocha": "7.0.2",
+    "mocha": "7.2.0"
   }
 }
