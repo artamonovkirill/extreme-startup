@@ -7,7 +7,7 @@ plugins {
     id 'org.springframework.boot' version '2.3.0.RELEASE' apply false
     id 'io.spring.dependency-management' version '1.0.9.RELEASE' apply false
     id 'io.ratpack.ratpack-groovy' version '1.8.0' apply false
-    id 'com.github.maflai.scalatest' version '0.26' apply false
+    id 'com.github.maiflai.scalatest' version '0.26' apply false
 }
 
 apply from: 'gradle/versions.gradle'
