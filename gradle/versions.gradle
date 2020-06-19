@@ -11,5 +11,5 @@ ext.versions = [
         scalatest: '3.1.2',
         scalatra : '2.7.0',
         spark    : '2.9.1',
-        spock    : '2.0-M2-groovy-3.0'
+        spock    : '2.0-M3-groovy-3.0'
 ]
