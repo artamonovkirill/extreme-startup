@@ -12,7 +12,7 @@
   },
   "devDependencies": {
     "supertest": "4.0.2",
-    "@types/mocha": "8.0.2",
+    "@types/mocha": "8.0.3",
     "mocha": "8.1.1"
   }
 }
