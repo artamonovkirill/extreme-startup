@@ -1,5 +1,3 @@
-rootProject.name = 'extreme-startup'
-
 plugins {
     id 'com.gradle.enterprise' version '3.4.1'
 }
@@ -10,6 +8,8 @@ gradleEnterprise {
         termsOfServiceAgree = 'yes'
     }
 }
+
+rootProject.name = 'extreme-startup'
 
 include 'java:spark'
 include 'java:springboot'
