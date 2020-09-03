@@ -1,8 +1,9 @@
 package com.github.artamonovkirill
 
-import org.scalatest.{FunSpec, Matchers}
+import org.scalatest.matchers.should.Matchers
+import org.scalatest.funspec.AnyFunSpec
 
-class ExtremeStartupTests extends FunSpec with Matchers {
+class ExtremeStartupTests extends AnyFunSpec with Matchers {
 
   describe("handles") {
     it("multiple queries") {
