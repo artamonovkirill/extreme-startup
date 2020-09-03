@@ -4,6 +4,13 @@ jobs:
     language: java
     jdk: openjdk14
     script: ./gradlew build --no-daemon --max-workers 2 --scan
+    before_cache:
+      - rm -f  $HOME/.gradle/caches/modules-2/modules-2.lock
+      - rm -fr $HOME/.gradle/caches/*/plugin-resolution/
+    cache:
+      directories:
+        - $HOME/.gradle/caches/
+        - $HOME/.gradle/wrapper/
   - language: python
     install: pip install -r $TRAVIS_BUILD_DIR/python/flask/requirements.txt
     script: pytest
@@ -21,9 +28,6 @@ jobs:
     gemfile: ruby/sinatra/Gemfile
     script:
       - rake --rakefile ruby/Rakefile
-cache:
-  directories:
-  - "$HOME/.gradle"
 notifications:
   slack:
     rooms:
