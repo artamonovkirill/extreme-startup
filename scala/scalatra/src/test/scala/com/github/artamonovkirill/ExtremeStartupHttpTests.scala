@@ -19,5 +19,4 @@ class ExtremeStartupHttpTests extends ScalatraFunSuite {
       body should equal("foo")
     }
   }
-
 }
