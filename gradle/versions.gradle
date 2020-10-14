@@ -1,7 +1,7 @@
 ext.versions = [
         assertj  : '3.17.2',
         flexmark : '0.36.8',
-        goji     : '1.4.0',
+        goji     : '2.0.0',
         groovy   : '3.0.6',
         javax    : '4.0.1',
         jetty    : '9.4.32.v20200930',
