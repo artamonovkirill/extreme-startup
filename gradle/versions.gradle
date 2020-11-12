@@ -1,5 +1,5 @@
 ext.versions = [
-        assertj  : '3.18.0',
+        assertj  : '3.18.1',
         flexmark : '0.36.8',
         goji     : '2.0.0',
         groovy   : '3.0.6',
