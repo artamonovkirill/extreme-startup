@@ -13,6 +13,6 @@ rootProject.name = 'extreme-startup'
 
 include 'java:spark'
 include 'java:springboot'
-include 'groovy:ratpack'
+//include 'groovy:ratpack'
 include 'groovy:springboot'
-include 'scala:scalatra'
+//include 'scala:scalatra'
