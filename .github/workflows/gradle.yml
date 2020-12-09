@@ -19,4 +19,4 @@ jobs:
           key: ${{ runner.os }}-gradle-${{ hashFiles('**/*.gradle') }}
           restore-keys: ${{ runner.os }}-gradle
       - name: Gradle
-        run: /gradlew build --no-daemon --max-workers 2 --scan
+        run: ./gradlew build --no-daemon --max-workers 2 --scan
