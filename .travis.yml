@@ -2,7 +2,7 @@ jobs:
   include:
   - stage: test
     language: java
-    jdk: openjdk14
+    jdk: openjdk15
     script: ./gradlew build --no-daemon --max-workers 2 --scan
     before_cache:
       - rm -f  $HOME/.gradle/caches/modules-2/modules-2.lock
