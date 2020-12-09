@@ -8,7 +8,7 @@ import spock.lang.Specification
 import static com.tomtom.http.response.ResponseCode.OK
 import static org.springframework.boot.test.context.SpringBootTest.WebEnvironment.RANDOM_PORT
 
-@SpringBootTest(webEnvironment = RANDOM_PORT, classes = ExtremeStartup)
+@SpringBootTest(webEnvironment = RANDOM_PORT, classes = [ExtremeStartup, NoWebClient])
 class QueryControllerSpec extends Specification {
 
     @LocalServerPort
@@ -20,10 +20,8 @@ class QueryControllerSpec extends Specification {
         def response = http.get(url: "http://localhost:$port?q=bar")
 
         then:
-        with(response) {
-            statusCode == OK
-            body == 'bar'
-        }
+        response.statusCode == OK
+        response.body == 'bar'
     }
 
 }

@@ -12,16 +12,16 @@ plugins {
 apply from: 'gradle/versions.gradle'
 
 subprojects {
+    apply plugin: 'java' // required to enable JUnit5
+
     repositories {
         jcenter()
     }
+
+    test.useJUnitPlatform()
 }
 
 java {
     sourceCompatibility = JavaVersion.VERSION_11
     targetCompatibility = JavaVersion.VERSION_11
-}
-
-test {
-    useJUnitPlatform()
 }
