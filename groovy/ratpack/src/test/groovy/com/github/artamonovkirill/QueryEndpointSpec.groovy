@@ -21,10 +21,8 @@ class QueryEndpointSpec extends Specification {
         def response = http.get(url: 'http://localhost:5050')
 
         then:
-        with(response) {
-            statusCode == OK
-            body == 'Hello!'
-        }
+        response.statusCode == OK
+        response.body == 'Hello!'
     }
 
     def 'returns query if provided'() {
@@ -32,10 +30,8 @@ class QueryEndpointSpec extends Specification {
         def response = http.get(url: 'http://localhost:5050?q=bar')
 
         then:
-        with(response) {
-            statusCode == OK
-            body == 'bar'
-        }
+        response.statusCode == OK
+        response.body == 'bar'
     }
 
     def cleanup() {
