@@ -12,7 +12,7 @@ jobs:
         - $HOME/.gradle/caches/
         - $HOME/.gradle/wrapper/
   - language: python
-    install: pip install -r $TRAVIS_BUILD_DIR/python/flask/requirements.txt
+    install: pip install --requirement $TRAVIS_BUILD_DIR/python/flask/requirements.txt
     script: pytest
   - language: node_js
     node_js: node
