@@ -1,0 +1,19 @@
+name: Ruby
+
+on:
+  - push
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Setup
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: 2.7
+          bundler-cache: true
+      - name: Install dependencies
+        run: bundle install --gemfile ruby/sinatra/Gemfile
+      - name: Test
+        run: rake --rakefile ruby/Rakefile
