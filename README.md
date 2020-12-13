@@ -1,4 +1,4 @@
-# Extreme Startups [![Build Status](https://travis-ci.org/artamonovkirill/extreme-startup.svg?branch=master)](https://travis-ci.org/artamonovkirill/extreme-startup)
+# Extreme Startups ![Gradle](https://github.com/artamonovkirill/extreme-startup/workflows/Gradle/badge.svg) ![Python](https://github.com/artamonovkirill/extreme-startup/workflows/Python/badge.svg) ![NodeJS](https://github.com/artamonovkirill/extreme-startup/workflows/NodeJS/badge.svg) ![Ruby](https://github.com/artamonovkirill/extreme-startup/workflows/Ruby/badge.svg) 
 
 Initial setups for [Extreme Startup](https://github.com/rchatley/extreme_startup) in different languages:
 
