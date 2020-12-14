@@ -9,7 +9,7 @@ gradleEnterprise {
     }
 }
 
-rootProject.name = 'extreme-startup'
+rootProject.name = 'Extreme Startup'
 
 include 'java:spark'
 include 'java:springboot'
