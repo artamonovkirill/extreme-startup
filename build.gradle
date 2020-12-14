@@ -9,8 +9,6 @@ plugins {
     id 'com.github.maiflai.scalatest' version '0.30' apply false
 }
 
-apply from: 'gradle/versions.gradle'
-
 subprojects {
     apply plugin: 'java' // required to enable JUnit5
 
