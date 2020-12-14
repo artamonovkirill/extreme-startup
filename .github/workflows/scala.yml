@@ -1,0 +1,25 @@
+name: SBT
+
+on:
+  - push
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Setup
+        uses: olafurpg/setup-scala@v10
+        with:
+          java-version: 15
+      - name: Cache
+        uses: actions/cache@v2
+        with:
+          path: |
+            ~/.ivy2/cache
+            ~/.sbt
+          key: ${{ runner.os }}-sbt-${{ hashFiles('**/build.sbt') }}
+      - name: Test
+        run: |
+          cd scala
+          sbt test
