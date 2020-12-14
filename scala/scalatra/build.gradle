@@ -1,9 +1,0 @@
-dependencies {
-    implementation "org.scalatra:scalatra_$versions.scala:$versions.scalatra"
-    implementation "javax.servlet:javax.servlet-api:$versions.javax"
-    implementation "org.eclipse.jetty:jetty-server:$versions.jetty"
-    implementation "org.eclipse.jetty:jetty-servlet:$versions.jetty"
-
-    testImplementation "org.scalatra:scalatra-scalatest_$versions.scala:$versions.scalatra"
-}
-
