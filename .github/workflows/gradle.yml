@@ -11,7 +11,8 @@ jobs:
       - name: Setup
         uses: actions/setup-java@v2
         with:
-          java-version: 15
+          java-version: 16
+          distribution: 'adopt'
       - name: Cache
         uses: actions/cache@v2.1.4
         with:
