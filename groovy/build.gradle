@@ -2,7 +2,7 @@ subprojects {
     apply plugin: 'groovy'
 
     dependencies {
-        implementation 'org.codehaus.groovy:groovy:3.0.7'
+        implementation 'org.codehaus.groovy:groovy:3.0.8'
 
         testImplementation 'com.tomtom.http:goji-http-client:2.0.0'
     }
