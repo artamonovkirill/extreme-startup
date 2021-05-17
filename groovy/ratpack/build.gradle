@@ -1,5 +1,5 @@
 apply plugin: 'io.ratpack.ratpack-groovy'
 
 dependencies {
-    testImplementation 'org.spockframework:spock-spring:2.0-M4-groovy-3.0'
+    testImplementation 'org.spockframework:spock-spring:2.0-groovy-3.0'
 }
