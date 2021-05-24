@@ -13,6 +13,5 @@ rootProject.name = 'Extreme Startup'
 
 include 'java:spark'
 include 'java:springboot'
-//include 'groovy:ratpack'
+//include 'groovy:ratpack' // https://github.com/ratpack/ratpack/issues/1570
 include 'groovy:springboot'
-//include 'scala:scalatra'

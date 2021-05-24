@@ -5,7 +5,7 @@ plugins {
 
     id 'org.springframework.boot' version '2.5.0' apply false
     id 'io.spring.dependency-management' version '1.0.11.RELEASE' apply false
-    id 'io.ratpack.ratpack-groovy' version '1.8.2' apply false
+    // id 'io.ratpack.ratpack-groovy' version '1.9.0-rc-2' apply false // https://github.com/ratpack/ratpack/issues/1570
     id 'com.github.maiflai.scalatest' version '0.31' apply false
 }
 
@@ -13,7 +13,7 @@ subprojects {
     apply plugin: 'java' // required to enable JUnit5
 
     repositories {
-        jcenter()
+        mavenCentral()
     }
 
     test.useJUnitPlatform()
