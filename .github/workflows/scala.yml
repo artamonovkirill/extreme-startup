@@ -8,18 +8,15 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - name: Setup
-        uses: olafurpg/setup-scala@v13
+      - uses: olafurpg/setup-scala@v13
         with:
-          java-version: adopt@1.15
-      - name: Cache
-        uses: actions/cache@v2.1.7
+          java-version: adopt@1.16
+      - uses: actions/cache@v2.1.7
         with:
           path: |
             ~/.ivy2/cache
             ~/.sbt
           key: ${{ runner.os }}-sbt-${{ hashFiles('**/build.sbt') }}
-      - name: Test
-        run: |
+      - run: |
           cd scala
           sbt test
