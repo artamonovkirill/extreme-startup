@@ -4,6 +4,6 @@ subprojects {
     dependencies {
         implementation 'org.codehaus.groovy:groovy:3.0.10'
 
-        testImplementation 'com.tomtom.http:goji-http-client:2.0.0'
+        testImplementation 'com.tomtom.http:goji-http-client:3.0.0'
     }
 }
