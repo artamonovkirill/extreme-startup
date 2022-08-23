@@ -1,5 +1,5 @@
 
-ThisBuild / scalaVersion := "2.13.8"
+ThisBuild / scalaVersion := "3.1.3"
 ThisBuild / organization := "com.github.artamonovkirill"
 
 lazy val scalatra = project
