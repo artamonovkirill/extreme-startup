@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.RestController
 @RestController
 class QueryController {
 
-    @GetMapping
+    @GetMapping('/')
     def query(@RequestParam('q') query) {
         println "Query is: $query"
         query
