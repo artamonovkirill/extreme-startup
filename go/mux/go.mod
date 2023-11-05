@@ -2,7 +2,7 @@ module github.com/extremestartup
 
 go 1.19
 
-require github.com/gorilla/mux v1.8.0
+require github.com/gorilla/mux v1.8.1
 
 require gotest.tools v2.2.0+incompatible
 
