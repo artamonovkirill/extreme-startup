@@ -10,7 +10,7 @@
     "@types/node": "20.11.30",
     "express": "4.19.0",
     "ts-node": "10.9.2",
-    "typescript": "5.4.2"
+    "typescript": "5.4.3"
   },
   "devDependencies": {
     "@types/mocha": "10.0.6",
