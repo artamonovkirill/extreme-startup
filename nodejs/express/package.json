@@ -17,6 +17,7 @@
     "@types/supertest": "6.0.2",
     "mocha": "10.4.0",
     "supertest": "6.3.4",
-    "minimatch": "9.0.4"
+    "minimatch": "9.0.4",
+    "formidable": "3.2.4"
   }
 }
