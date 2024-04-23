@@ -18,6 +18,6 @@
     "mocha": "10.4.0",
     "supertest": "6.3.4",
     "minimatch": "9.0.4",
-    "formidable": "3.2.4"
+    "formidable": "3.5.1"
   }
 }
