@@ -1,7 +1,5 @@
 package com.github.artamonovkirill;
 
-import java.util.Optional;
-
 import static java.lang.String.format;
 import static spark.Spark.get;
 
