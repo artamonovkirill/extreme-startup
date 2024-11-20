@@ -1,7 +1,10 @@
 name: Go
 
 on:
-  - push
+  push:
+    paths-ignore:
+      - '.github/workflows/ruby.yml'
+      - 'ruby/**'
 
 jobs:
   build:
