@@ -3,20 +3,20 @@ updates:
   - package-ecosystem: npm
     directory: /nodejs/express
     schedule:
-      interval: weekly
+      interval: monthly
   - package-ecosystem: gradle
     directory: /
     schedule:
-      interval: weekly
+      interval: monthly
   - package-ecosystem: github-actions
     directory: /
     schedule:
-      interval: weekly
+      interval: monthly
   - package-ecosystem: gomod
     directory: /
     schedule:
-      interval: weekly
+      interval: monthly
   - package-ecosystem: pip
     directory: /
     schedule:
-      interval: weekly
+      interval: monthly
