@@ -2,16 +2,18 @@
 
 Initial setups for [Extreme Startup](https://github.com/rchatley/extreme_startup) in different languages:
 
+* Go:
+  * [Mux](./go/mux)
+* Groovy:
+  * [Spring Boot](./groovy/springboot)
+* Haskell:
+  * [Happstack](./haskell/happstack/README.md)
 * Java:
   * [Spark](./java/spark)
   * [Spring Boot](./java/springboot)
-* Groovy:
-  * [Spring Boot](./groovy/springboot)
+* TypeScript
+  * [Express](./nodejs/express/README.md)
 * Python:
   * [Flask](./python/flask/README.md)
-* Haskell:
-  * [Happstack](./haskell/happstack/README.md)
-* TypeScript/NodeJS
-  * [Express](./nodejs/express/README.md)
 * Ruby:
   * [Sinatra](./ruby/sinatra/README.md)
