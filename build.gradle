@@ -13,7 +13,19 @@ subprojects {
         mavenCentral()
     }
 
-    test.useJUnitPlatform()
+    testing {
+        suites {
+            test {
+                useJUnitJupiter()
+            }
+        }
+    }
+
+    test{
+        testLogging {
+            events "passed", "skipped", "failed"
+        }
+    }
 }
 
 java {
