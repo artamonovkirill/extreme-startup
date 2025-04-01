@@ -3,7 +3,7 @@ name: NodeJS
 on:
   push:
     paths:
-      - '.github/workflows/npm.yml'
+      - '.github/workflows/npm.yaml'
       - 'nodejs/**'
 
 jobs:

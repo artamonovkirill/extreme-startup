@@ -3,7 +3,7 @@ name: Ruby
 on:
   push:
     paths:
-      - '.github/workflows/ruby.yml'
+      - '.github/workflows/ruby.yaml'
       - 'ruby/**'
 
 jobs:
