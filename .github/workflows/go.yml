@@ -2,9 +2,9 @@ name: Go
 
 on:
   push:
-    paths-ignore:
-      - '.github/workflows/ruby.yml'
-      - 'ruby/**'
+    paths:
+      - '.github/workflows/go.yml'
+      - 'go/**'
 
 jobs:
   build:

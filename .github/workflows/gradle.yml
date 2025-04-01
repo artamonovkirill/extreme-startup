@@ -3,6 +3,12 @@ name: Gradle
 on:
   push:
     paths-ignore:
+      - '.github/workflows/go.yml'
+      - 'go/**'
+      - '.github/workflows/npm.yml'
+      - 'nodejs/**'
+      - '.github/workflows/python.yml'
+      - 'python/**'
       - '.github/workflows/ruby.yml'
       - 'ruby/**'
 

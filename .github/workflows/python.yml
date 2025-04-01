@@ -2,9 +2,9 @@ name: Python
 
 on:
   push:
-    paths-ignore:
-      - '.github/workflows/ruby.yml'
-      - 'ruby/**'
+    paths:
+      - '.github/workflows/python.yml'
+      - 'python/**'
 
 jobs:
   build:
