@@ -2,9 +2,9 @@ name: NodeJS
 
 on:
   push:
-    paths-ignore:
-      - '.github/workflows/ruby.yml'
-      - 'ruby/**'
+    paths:
+      - '.github/workflows/npm.yml'
+      - 'nodejs/**'
 
 jobs:
   build:
