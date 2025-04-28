@@ -7,7 +7,7 @@
   },
   "dependencies": {
     "@types/express": "5.0.1",
-    "@types/node": "22.15.2",
+    "@types/node": "22.15.3",
     "express": "5.1.0",
     "ts-node": "10.9.2",
     "typescript": "5.8.3"
