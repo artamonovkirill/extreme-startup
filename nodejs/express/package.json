@@ -17,6 +17,7 @@
     "@types/supertest": "6.0.3",
     "formidable": "3.5.4",
     "minimatch": "10.0.3",
+    "brace-expansion": ">=1.1.12",
     "mocha": "11.7.0",
     "supertest": "7.1.1"
   }
