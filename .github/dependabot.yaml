@@ -9,19 +9,19 @@ updates:
     directory: /
     schedule:
       interval: cron
-      cronjob: "* * 28 * *"
+      cronjob: "0 0 28 * *"
   - package-ecosystem: github-actions
     directory: /
     schedule:
       interval: cron
-      cronjob: "* * 28 * *"
+      cronjob: "0 6 28 * *"
   - package-ecosystem: gomod
     directory: /
     schedule:
       interval: cron
-      cronjob: "* * 28 * *"
+      cronjob: "0 12 28 * *"
   - package-ecosystem: pip
     directory: /
     schedule:
       interval: cron
-      cronjob: "* * 28 * *"
+      cronjob: "0 18 28 * *"
