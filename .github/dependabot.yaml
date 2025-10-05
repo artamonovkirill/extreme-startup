@@ -3,20 +3,25 @@ updates:
   - package-ecosystem: npm
     directory: /nodejs/express
     schedule:
-      interval: monthly
+      interval: cron
+      cronjob: "* * 28 * *"
   - package-ecosystem: gradle
     directory: /
     schedule:
-      interval: monthly
+      interval: cron
+      cronjob: "* * 28 * *"
   - package-ecosystem: github-actions
     directory: /
     schedule:
-      interval: monthly
+      interval: cron
+      cronjob: "* * 28 * *"
   - package-ecosystem: gomod
     directory: /
     schedule:
-      interval: monthly
+      interval: cron
+      cronjob: "* * 28 * *"
   - package-ecosystem: pip
     directory: /
     schedule:
-      interval: monthly
+      interval: cron
+      cronjob: "* * 28 * *"

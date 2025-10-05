@@ -6,5 +6,5 @@
   "automerge": true,
   "automergeType": "branch",
   "commitMessagePrefix": ":arrow_up:",
-  "schedule": ["* * 28 * *"]
+  "schedule": ["* * 27 * *"]
 }
