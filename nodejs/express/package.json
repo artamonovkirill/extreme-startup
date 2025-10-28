@@ -6,7 +6,7 @@
     "ts-node": "ts-node"
   },
   "dependencies": {
-    "@types/express": "5.0.4",
+    "@types/express": "5.0.5",
     "@types/node": "24.9.1",
     "express": "5.1.0",
     "ts-node": "10.9.2",
