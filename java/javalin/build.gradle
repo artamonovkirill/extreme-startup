@@ -3,4 +3,3 @@ dependencies {
 
     testImplementation 'io.javalin:javalin-testtools:6.7.0'
 }
-
