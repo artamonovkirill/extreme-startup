@@ -1,5 +1,5 @@
 rootProject.name = 'Extreme Startup'
 
-include 'java:spark'
+include 'java:javalin'
 include 'java:springboot'
 include 'groovy:springboot'
