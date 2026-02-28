@@ -1,23 +1,18 @@
 {
   "name": "extreme-startup",
   "scripts": {
-    "test": "mocha --require ts-node/register *.spec.ts",
-    "start": "npm run ts-node .",
-    "ts-node": "ts-node"
+    "test": "node --import tsx --test *.spec.ts",
+    "start": "tsx ."
   },
   "dependencies": {
-    "@types/express": "5.0.6",
-    "@types/node": "25.0.10",
-    "express": "5.2.1",
-    "ts-node": "10.9.2",
-    "typescript": "5.9.3"
+    "express": "5.2.1"
   },
   "devDependencies": {
-    "@types/mocha": "10.0.10",
+    "@types/express": "5.0.6",
+    "@types/node": "25.0.10",
     "@types/supertest": "6.0.3",
-    "formidable": "3.5.4",
-    "minimatch": "10.2.3",
-    "mocha": "11.7.5",
-    "supertest": "7.2.2"
+    "supertest": "7.2.2",
+    "tsx": "4.21.0",
+    "typescript": "5.9.3"
   }
 }
